@@ -29,7 +29,7 @@
                 @foreach($categories as $category)
                     <li class="nav-item">
                         <a class="nav-link link-light fw-bold px-3"
-                           href="{{route('category', $category->id)}}">{{$category->name_tm}}</a>
+                           >{{$category->name_tm}}</a>
                     </li>
                 @endforeach
             </ul>
