@@ -15,7 +15,7 @@ class TourismSeeder extends Seeder
     {
 
         $objects = [
-            ['1','5','2','1','Arcabil sayoly','','15:00','1000','Atajan','699036','Dync alys','Mizan otelinda 3 gunlik dync alys ozimiz oyunizden alyp gidyaris janlasyn'],
+            ['1','5','2','1','Arcabil sayoly','','15:00','1000','Atajan','699036','Dync alys','','','Mizan otelinda 3 gunlik dync alys ozimiz oyunizden alyp gidyaris janlasyn','',''],
 //            ['Ahal welayaty','',''],
 //            ['Mary welayaty','',''],
 //            ['Balkan welayaty','',''],
@@ -37,7 +37,11 @@ class TourismSeeder extends Seeder
             $obj->author=$object[8];
             $obj->phone=$object[9];
             $obj->name_tm=$object[10];
-            $obj->description_tm=$object[11];
+            $obj->name_ru=$object[11];
+            $obj->name_en=$object[12];
+            $obj->description_tm=$object[13];
+            $obj->description_ru=$object[14];
+            $obj->description_en=$object[15];
             $obj->save();
         }
     }
